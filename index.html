@@ -3,20 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>やめるん - ドキュメント</title>
+  <title>アプリ ドキュメント</title>
   <style>
-    body { font-family: sans-serif; max-width: 800px; margin: 60px auto; padding: 0 20px; color: #333; }
-    h1 { font-size: 1.5rem; }
-    ul { line-height: 2; }
-    a { color: #0070f3; }
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+      color: #333;
+      background: #fafafa;
+    }
+    h1 { font-size: 1.5rem; margin-bottom: 32px; }
+    .app-section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .app-section h2 {
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+      color: #222;
+    }
+    ul { list-style: none; line-height: 2.2; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <h1>やめるん - 習慣リセット</h1>
-  <ul>
-    <li><a href="/support/">サポート</a></li>
-    <li><a href="/privacy-policy/">プライバシーポリシー</a></li>
-    <li><a href="/terms-of-service/">利用規約</a></li>
-  </ul>
+  <h1>アプリ ドキュメント</h1>
+
+  <div class="app-section">
+    <h2>やめるん - 習慣リセット</h2>
+    <ul>
+      <li><a href="/support/">サポート</a></li>
+      <li><a href="/privacy-policy/">プライバシーポリシー</a></li>
+      <li><a href="/terms-of-service/">利用規約</a></li>
+    </ul>
+  </div>
+
+  <div class="app-section">
+    <h2>家事すっきり手帳</h2>
+    <ul>
+      <li><a href="/kaji-sukkiri/privacy-policy/">プライバシーポリシー</a></li>
+      <li><a href="/kaji-sukkiri/terms-of-service/">利用規約</a></li>
+    </ul>
+  </div>
 </body>
 </html>
