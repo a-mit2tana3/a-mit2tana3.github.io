@@ -138,13 +138,35 @@
       <li>SKAdNetwork によるアトリビューションデータ（iOS）</li>
     </ul>
 
-    <p><strong>3-2. App内課金（In-App Purchase）</strong></p>
+    <p><strong>3-2. Firebase Analytics（利用状況の分析）</strong></p>
+    <p>本アプリは、アプリの改善・品質向上のために Firebase Analytics（Google LLC 提供）を利用しています。Firebase Analytics は、以下の情報を自動的に収集します。</p>
+    <ul>
+      <li>デバイス情報（機種名、OSバージョン、画面解像度、言語設定）</li>
+      <li>アプリ情報（アプリバージョン、アプリID）</li>
+      <li>利用状況データ（画面遷移、セッション開始・終了、セッション時間）</li>
+      <li>IPアドレスから推定されるおおよその地域情報（国・地域レベル。IPアドレスそのものは保存されません）</li>
+      <li>広告識別子（iOS: IDFA / Android: GAID）※トラッキング許可時のみ</li>
+    </ul>
+    <p>これらのデータは、以下の目的のために使用されます。</p>
+    <ul>
+      <li>アプリの改善・品質向上のための利用状況分析</li>
+      <li>ユーザー体験の最適化</li>
+      <li>不具合の検知と修正</li>
+    </ul>
+    <p>Firebase Analytics によるデータの保持期間は以下の通りです。</p>
+    <ul>
+      <li>イベントデータ: Firebase Console の設定に基づく（デフォルト: 2ヶ月）</li>
+      <li>ユーザープロパティ: 最大60日（非アクティブユーザーのデータは自動削除）</li>
+    </ul>
+
+    <p><strong>3-3. App内課金（In-App Purchase）</strong></p>
     <p>本アプリは、プレミアム版への買い切りアップグレード機能を提供しています。課金処理は Apple App Store / Google Play Store のプラットフォームを通じて行われ、決済情報（クレジットカード番号等）は当方が直接取得・保存することはありません。購入状態のみがデバイス内に記録されます。</p>
 
-    <p><strong>3-3. データの取り扱いに関する共通事項</strong></p>
+    <p><strong>3-4. データの取り扱いに関する共通事項</strong></p>
     <p>上記のサービスで収集されるデータは、Google のポリシーに基づいて収集・処理されます。詳細は以下をご参照ください。</p>
     <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google プライバシーポリシー</a></p>
     <p><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Google AdMob &amp; AdSense ポリシー</a></p>
+    <p><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase のプライバシーとセキュリティ</a></p>
     <p>なお、本アプリのコードから明示的にユーザーの個人情報を上記サービスに渡すことはありません。上記のデータ収集は各 SDK 側で自動的に処理されるものです。</p>
   </div>
 
@@ -154,8 +176,8 @@
     <p>本アプリでは、より関連性の高い広告を表示するため、Google AdMob が広告識別子（IDFA）を使用したパーソナライズ広告配信を行う場合があります。これは Apple の定義におけるトラッキングに該当します。</p>
     <p>アプリの利用中に表示される許可ダイアログにおいて、以下を選択いただけます。</p>
     <ul>
-      <li><strong>「許可」</strong>を選択した場合: ユーザー様の興味関心に応じたパーソナライズ広告が表示されます。</li>
-      <li><strong>「Appにトラッキングしないように要求」</strong>を選択した場合: 一般的な（非パーソナライズ）広告が表示されます。広告識別子は使用されません。</li>
+      <li><strong>「許可」</strong>を選択した場合: ユーザー様の興味関心に応じたパーソナライズ広告が表示されます。また、Firebase Analytics がより詳細な分析データを収集します。</li>
+      <li><strong>「Appにトラッキングしないように要求」</strong>を選択した場合: 一般的な（非パーソナライズ）広告が表示されます。Firebase Analytics は引き続き匿名化されたデータを収集しますが、広告識別子は使用されません。</li>
     </ul>
     <p>いずれを選択された場合も、本アプリの基本機能には影響しません。</p>
     <p>選択の変更は、iOS の「設定」アプリ内の「プライバシーとセキュリティ」→「トラッキング」から、いつでも可能です。</p>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート - 家事すっきり手帳</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #fafaf9;
+    color: #1c1917;
+    line-height: 1.85;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .app-name {
+    color: #78716c;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .lead {
+    color: #57534e;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e7e5e4;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    color: #292524;
+  }
+
+  h2:first-of-type {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 14px;
+    color: #44403c;
+  }
+
+  .faq-category {
+    font-size: 13px;
+    font-weight: 700;
+    color: #78716c;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 28px 0 12px;
+  }
+
+  .faq-category:first-child {
+    margin-top: 0;
+  }
+
+  details {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  details[open] {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+
+  summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 14px 18px;
+    font-weight: 600;
+    color: #292524;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary::before {
+    content: '';
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    margin-top: 8px;
+    border-right: 2px solid #a8a29e;
+    border-bottom: 2px solid #a8a29e;
+    transform: rotate(-45deg);
+    transition: transform 0.2s ease;
+  }
+
+  details[open] summary::before {
+    transform: rotate(45deg);
+    margin-top: 6px;
+  }
+
+  .faq-answer {
+    padding: 0 18px 16px 36px;
+    color: #44403c;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .faq-answer p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+
+  .btn:hover {
+    background: #1d4ed8;
+    text-decoration: none;
+  }
+
+  ul {
+    margin: 8px 0 14px 20px;
+    color: #44403c;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .section {
+    margin-bottom: 28px;
+  }
+
+  .footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e7e5e4;
+    color: #a8a29e;
+    font-size: 13px;
+  }
+
+  .note {
+    font-size: 13px;
+    color: #78716c;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="app-name">家事すっきり手帳</p>
+  <h1>サポート</h1>
+  <p class="lead">本アプリの使い方、よくあるご質問、お問い合わせ先を掲載しています。</p>
+
+  <div class="section">
+    <h2>よくあるご質問</h2>
+
+    <p class="faq-category">アプリの基本操作</p>
+
+    <details>
+      <summary>タスクを完了するには？</summary>
+      <div class="faq-answer">
+        <p>ホーム画面に表示されているタスクをタップすると、記録画面が開きます。完了ボタンを押すと、実施日が記録され、次回の期日が自動で更新されます。</p>
+      </div>
+    </details>
+    <details>
+      <summary>カスタムタスクを追加するには？</summary>
+      <div class="faq-answer">
+        <p>カタログ画面の「カスタム」タブから、オリジナルのタスクを追加できます。タスク名と実施間隔（日数）を設定して保存してください。無料版では最大5件まで、プレミアム版では無制限に追加できます。</p>
+      </div>
+    </details>
+    <details>
+      <summary>タスクの実施間隔を変更するには？</summary>
+      <div class="faq-answer">
+        <p>カタログ画面からタスクを選択し、間隔の変更を行ってください。変更した間隔は次回の記録から反映されます。</p>
+      </div>
+    </details>
+    <details>
+      <summary>履歴はどこで見られますか？</summary>
+      <div class="faq-answer">
+        <p>画面下部の「履歴」タブから、これまでの実施記録を一覧で確認できます。タスクごとの完了日時やメモも確認可能です。</p>
+      </div>
+    </details>
+
+    <p class="faq-category">プレミアム版について</p>
+
+    <details>
+      <summary>プレミアム版では何ができますか？</summary>
+      <div class="faq-answer">
+        <p>プレミアム版（¥500・買い切り）では、以下の特典があります。</p>
+        <ul>
+          <li>すべての広告が非表示になります</li>
+          <li>カスタムタスクを無制限に追加できます（無料版は5件まで）</li>
+        </ul>
+        <p>サブスクリプション（定期課金）ではなく、一度のお支払いで永続的にご利用いただけます。</p>
+      </div>
+    </details>
+    <details>
+      <summary>購入を復元するには？</summary>
+      <div class="faq-answer">
+        <p>機種変更や再インストール後は、設定画面の「購入を復元」ボタンから、以前の購入を復元できます。同じ Apple ID でサインインしている必要があります。</p>
+      </div>
+    </details>
+
+    <p class="faq-category">データについて</p>
+
+    <details>
+      <summary>データはどこに保存されますか？</summary>
+      <div class="faq-answer">
+        <p>タスク・履歴・設定などのデータは、すべてお使いの端末内にのみ保存されます。当方のサーバーにデータを送信・保存する仕組みはありません。詳細は<a href="/kaji-sukkiri/privacy-policy/">プライバシーポリシー</a>をご参照ください。</p>
+      </div>
+    </details>
+    <details>
+      <summary>機種変更のとき、データを引き継げますか？</summary>
+      <div class="faq-answer">
+        <p>本アプリ単体の機能として、端末をまたいだデータ移行（クラウド同期など）は行いません。iCloud バックアップや端末の移行手順に含まれるアプリデータの引き継ぎの可否は、OS や端末の設定に依存します。プレミアム版の購入状態は Apple ID に紐づいているため、「購入を復元」で復元できます。</p>
+      </div>
+    </details>
+
+    <p class="faq-category">広告について</p>
+
+    <details>
+      <summary>広告を非表示にできますか？</summary>
+      <div class="faq-answer">
+        <p>プレミアム版（¥500・買い切り）にアップグレードすると、すべての広告が非表示になります。設定画面の「プレミアム版」セクションからご購入いただけます。</p>
+      </div>
+    </details>
+    <details>
+      <summary>トラッキングの許可（ATT）とは何ですか？</summary>
+      <div class="faq-answer">
+        <p>iOS では、興味関心に合わせた広告配信のために、システムのトラッキング許可をお願いする画面が表示されることがあります。許可しなくても本アプリの主要な機能の利用に支障はなく、非パーソナライズ広告が表示される場合があります。詳細は<a href="/kaji-sukkiri/privacy-policy/">プライバシーポリシー</a>の「トラッキングについて」をご参照ください。</p>
+      </div>
+    </details>
+
+    <p class="faq-category">不具合・トラブル</p>
+
+    <details>
+      <summary>アプリが起動しない・すぐ落ちる</summary>
+      <div class="faq-answer">
+        <p>端末の再起動、iOS のアップデート、App Store からの本アプリの最新版への更新をお試しください。改善しない場合は、<a href="#contact">お問い合わせ</a>より OS のバージョンと発生状況をお知らせください。</p>
+      </div>
+    </details>
+    <details>
+      <summary>タスクの期日がおかしい</summary>
+      <div class="faq-answer">
+        <p>タスクの期日は、前回の完了日と設定した間隔から自動で計算されます。意図しない期日が表示される場合は、タスクの間隔設定をご確認ください。解決しない場合は、<a href="#contact">お問い合わせ</a>にてお知らせください。</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>お問い合わせ</h2>
+    <div class="card">
+      <p>ご質問・不具合のご報告は、下記のフォームからお願いいたします。内容を確認のうえ、<strong>目安として3営業日以内</strong>に返信いたします（土日祝・繁忙期は遅れる場合があります）。</p>
+      <p class="note">お問い合わせ前に、上の「よくあるご質問」を一度ご覧ください。解決しなかった場合、OS の種類（iOS）とバージョン、本アプリのバージョン、できるだけ具体的な手順を記載いただくと、調査がスムーズです。</p>
+      <p>
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeAdAJT0lbYgfVL1hu_YFKQc5WRmHaREhuR_2erXOSpPL_7SQ/viewform" target="_blank" rel="noopener noreferrer">お問い合わせフォームを開く</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>アプリ情報</h2>
+    <ul>
+      <li><strong>アプリ名</strong>: 家事すっきり手帳</li>
+      <li><strong>対応端末</strong>: iPhone（iOS 13.0 以降）※ iPad・Apple Watch には対応しておりません</li>
+      <li><strong>配信</strong>: Apple App Store</li>
+      <li><strong>価格</strong>: 無料（プレミアム版: ¥500・買い切り）</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>関連リンク</h2>
+    <ul>
+      <li><a href="/kaji-sukkiri/privacy-policy/">プライバシーポリシー</a></li>
+      <li><a href="/kaji-sukkiri/terms-of-service/">利用規約</a></li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p><a href="/">トップ</a> | <a href="/kaji-sukkiri/privacy-policy/">プライバシー</a> | <a href="/kaji-sukkiri/terms-of-service/">利用規約</a></p>
+    <p style="margin-top: 8px;">&copy; 2026 家事すっきり手帳. All rights reserved.</p>
+  </div>
+</div>
+</body>
+</html>
