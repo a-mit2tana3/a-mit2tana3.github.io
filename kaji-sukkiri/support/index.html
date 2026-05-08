@@ -187,6 +187,33 @@
     font-size: 13px;
     color: #78716c;
   }
+
+  .tokushoho-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  .tokushoho-table th,
+  .tokushoho-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e7e5e4;
+    text-align: left;
+    vertical-align: top;
+    color: #44403c;
+  }
+
+  .tokushoho-table th {
+    width: 140px;
+    font-weight: 600;
+    color: #292524;
+    white-space: nowrap;
+  }
+
+  .tokushoho-table tr:last-child th,
+  .tokushoho-table tr:last-child td {
+    border-bottom: none;
+  }
 </style>
 </head>
 <body>
@@ -312,6 +339,8 @@
     </ul>
   </div>
 
+  <div class="section" id="tokushoho" data-nosnippet></div>
+
   <div class="section">
     <h2>関連リンク</h2>
     <ul>
@@ -325,5 +354,35 @@
     <p style="margin-top: 8px;">&copy; 2026 家事すっきり手帳. All rights reserved.</p>
   </div>
 </div>
+<script>
+(function() {
+  var nc = [65,82,73,83,65,32,84,65,78,65,75,65];
+  var n = nc.map(function(c) { return String.fromCharCode(c); }).join('');
+  var e = atob('c3VwcG9ydC5rYWppc3Vra2lyaXRlY2hv') + '\x40' + atob('Z21haWwuY29t');
+  var el = document.getElementById('tokushoho');
+  if (!el) return;
+  el.innerHTML =
+    '<h2>特定商取引法に基づく表記</h2>' +
+    '<div class="card">' +
+    '<table class="tokushoho-table">' +
+    '<tr><th>販売業者</th><td>' + n + '（個人）</td></tr>' +
+    '<tr><th>運営責任者</th><td>' + n + '</td></tr>' +
+    '<tr><th>所在地</th><td>請求があった場合は遅滞なく開示いたします</td></tr>' +
+    '<tr><th>電話番号</th><td>請求があった場合は遅滞なく開示いたします</td></tr>' +
+    '<tr><th>メールアドレス</th><td>' + e + '</td></tr>' +
+    '<tr><th>販売価格</th><td>アプリ内の各購入画面に表示された価格に準じます</td></tr>' +
+    '<tr><th>支払方法</th><td>Apple App Store の決済システムによる</td></tr>' +
+    '<tr><th>支払時期</th><td>購入手続き完了時に即時決済</td></tr>' +
+    '<tr><th>商品の引渡時期</th><td>購入手続き完了後、即時利用可能</td></tr>' +
+    '<tr><th>返品・キャンセル</th><td>デジタルコンテンツのため、購入後の返品・返金は原則お受けできません。Apple の返金ポリシーに準じます。</td></tr>' +
+    '</table>' +
+    '<p class="note" style="margin-top: 12px;">' +
+    '※ 個人開発のため、住所・電話番号は省略しています。' +
+    '特定商取引法第11条ただし書きに基づき、購入者からの請求があった場合は遅滞なく開示いたします。' +
+    'お問い合わせは上記メールアドレスまたは<a href="#contact">お問い合わせフォーム</a>よりお願いいたします。' +
+    '</p>' +
+    '</div>';
+})();
+</script>
 </body>
 </html>
