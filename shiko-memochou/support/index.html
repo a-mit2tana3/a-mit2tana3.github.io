@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート - 思考のメモ帳</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #fafaf9;
+    color: #1c1917;
+    line-height: 1.85;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .app-name {
+    color: #78716c;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .lead {
+    color: #57534e;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e7e5e4;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    color: #292524;
+  }
+
+  h2:first-of-type {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 14px;
+    color: #44403c;
+  }
+
+  .faq-category {
+    font-size: 13px;
+    font-weight: 700;
+    color: #78716c;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 28px 0 12px;
+  }
+
+  .faq-category:first-child {
+    margin-top: 0;
+  }
+
+  details {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  details[open] {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+
+  summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 14px 18px;
+    font-weight: 600;
+    color: #292524;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary::before {
+    content: '';
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    margin-top: 8px;
+    border-right: 2px solid #a8a29e;
+    border-bottom: 2px solid #a8a29e;
+    transform: rotate(-45deg);
+    transition: transform 0.2s ease;
+  }
+
+  details[open] summary::before {
+    transform: rotate(45deg);
+    margin-top: 6px;
+  }
+
+  .faq-answer {
+    padding: 0 18px 16px 36px;
+    color: #44403c;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .faq-answer p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+
+  .btn:hover {
+    background: #1d4ed8;
+    text-decoration: none;
+  }
+
+  ul {
+    margin: 8px 0 14px 20px;
+    color: #44403c;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .section {
+    margin-bottom: 28px;
+  }
+
+  .footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e7e5e4;
+    color: #a8a29e;
+    font-size: 13px;
+  }
+
+  .note {
+    font-size: 13px;
+    color: #78716c;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="app-name">思考のメモ帳</p>
+  <h1>サポート</h1>
+  <p class="lead">本アプリの使い方、よくあるご質問、お問い合わせ先を掲載しています。</p>
+
+  <div class="section">
+    <h2>よくあるご質問</h2>
+
+    <p class="faq-category">アプリの基本操作</p>
+
+    <details>
+      <summary>フォルダを作成するには？</summary>
+      <div class="faq-answer">
+        <p>ホーム画面右下の「＋」ボタンをタップすると、新しいフォルダを作成できます。フォルダ名を入力して保存してください。フォルダはアウトラインをまとめる単位です。</p>
+      </div>
+    </details>
+    <details>
+      <summary>ノードを追加するには？</summary>
+      <div class="faq-answer">
+        <p>フォルダを開いた画面（アウトライン画面）の下部にあるツールバーの「＋」ボタンをタップすると、選択中のノードの直後に新しいノードが追加されます。タイトル入力後に「改行」キーを押しても、次のノードを続けて追加できます。</p>
+      </div>
+    </details>
+    <details>
+      <summary>ノードの階層（インデント）を変えるには？</summary>
+      <div class="faq-answer">
+        <p>書くモードのツールバーにある「←」「→」ボタンでインデントを操作できます。ノードをタップして選択状態にしてから操作してください。インデントを深くすると子ノードになり、浅くすると親の階層に移動します。子ノードを持つノードをインデント操作すると、子ノードもまとめて移動します。</p>
+      </div>
+    </details>
+    <details>
+      <summary>「書く」モードと「整理」モードの違いは？</summary>
+      <div class="faq-answer">
+        <p>画面上部のセグメントボタンで切り替えられます。</p>
+        <p>「書く」モードはテキスト入力に特化したモードです。ノードのタイトル・メモを直接編集できます。</p>
+        <p>「整理」モードはドラッグ＆ドロップでノードの並び順を自由に変更できるモードです。インデントの変更も可能です。タップするとそのノードを選択したまま「書く」モードに自動で切り替わります。</p>
+      </div>
+    </details>
+    <details>
+      <summary>ノードの本文（長文メモ）を編集するには？</summary>
+      <div class="faq-answer">
+        <p>書くモードでノードを選択すると、右端に鉛筆アイコンが表示されます。このアイコンをタップすると本文編集画面が開き、リッチテキストで長文を入力できます。本文がある場合はアイコンが青く表示されます。</p>
+      </div>
+    </details>
+    <details>
+      <summary>ノードを削除するには？</summary>
+      <div class="faq-answer">
+        <p>書くモードで削除したいノードを選択し、ツールバーのゴミ箱アイコンをタップしてください。確認ダイアログが表示されます。子ノードがある場合は、子ノードもすべて削除されますのでご注意ください。</p>
+      </div>
+    </details>
+    <details>
+      <summary>子ノードを折りたたむには？</summary>
+      <div class="faq-answer">
+        <p>書くモードで子ノードを持つノードの左端に表示される「▼」アイコンをタップすると、子ノードを折りたたんで非表示にできます。もう一度タップすると展開されます。</p>
+      </div>
+    </details>
+
+    <p class="faq-category">データについて</p>
+
+    <details>
+      <summary>データはどこに保存されますか？</summary>
+      <div class="faq-answer">
+        <p>フォルダ・ノード・本文などのデータは、すべてお使いの端末内にのみ保存されます。当方のサーバーにデータを送信・保存する仕組みはありません。詳細は<a href="/shiko-memochou/privacy-policy/">プライバシーポリシー</a>をご参照ください。</p>
+      </div>
+    </details>
+    <details>
+      <summary>機種変更のとき、データを引き継げますか？</summary>
+      <div class="faq-answer">
+        <p>本アプリ単体の機能として、端末をまたいだデータ移行（クラウド同期など）は行いません。iCloud バックアップや端末の移行手順に含まれるアプリデータの引き継ぎの可否は、OS や端末の設定に依存します。大切なデータはご自身でバックアップをお取りください。</p>
+      </div>
+    </details>
+
+    <p class="faq-category">広告について</p>
+
+    <details>
+      <summary>トラッキングの許可（ATT）とは何ですか？</summary>
+      <div class="faq-answer">
+        <p>iOS では、興味関心に合わせた広告配信のために、システムのトラッキング許可をお願いする画面が表示されることがあります。許可しなくても本アプリの主要な機能の利用に支障はなく、非パーソナライズ広告が表示される場合があります。詳細は<a href="/shiko-memochou/privacy-policy/">プライバシーポリシー</a>の「トラッキングについて」をご参照ください。</p>
+      </div>
+    </details>
+
+    <p class="faq-category">不具合・トラブル</p>
+
+    <details>
+      <summary>アプリが起動しない・すぐ落ちる</summary>
+      <div class="faq-answer">
+        <p>端末の再起動、iOS のアップデート、App Store からの本アプリの最新版への更新をお試しください。改善しない場合は、<a href="#contact">お問い合わせ</a>より OS のバージョンと発生状況をお知らせください。</p>
+      </div>
+    </details>
+    <details>
+      <summary>入力したテキストが保存されない</summary>
+      <div class="faq-answer">
+        <p>テキストは自動で保存されます。入力後に他のノードをタップするか、画面を遷移することで保存が確定します。アプリを強制終了した直後など、まれに最後の入力が反映されない場合があります。その場合は<a href="#contact">お問い合わせ</a>にてお知らせください。</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>お問い合わせ</h2>
+    <div class="card">
+      <p>ご質問・不具合のご報告は、下記のフォームからお願いいたします。内容を確認のうえ、<strong>目安として3営業日以内</strong>に返信いたします（土日祝・繁忙期は遅れる場合があります）。</p>
+      <p class="note">お問い合わせ前に、上の「よくあるご質問」を一度ご覧ください。解決しなかった場合、OS の種類（iOS）とバージョン、本アプリのバージョン、できるだけ具体的な手順を記載いただくと、調査がスムーズです。</p>
+      <p>
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeAdAJT0lbYgfVL1hu_YFKQc5WRmHaREhuR_2erXOSpPL_7SQ/viewform" target="_blank" rel="noopener noreferrer">お問い合わせフォームを開く</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>アプリ情報</h2>
+    <ul>
+      <li><strong>アプリ名</strong>: 思考のメモ帳</li>
+      <li><strong>対応端末</strong>: iPhone（iOS 13.0 以降）</li>
+      <li><strong>配信</strong>: Apple App Store</li>
+      <li><strong>価格</strong>: 無料</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>関連リンク</h2>
+    <ul>
+      <li><a href="/shiko-memochou/privacy-policy/">プライバシーポリシー</a></li>
+      <li><a href="/shiko-memochou/terms-of-service/">利用規約</a></li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p><a href="/">トップ</a> | <a href="/shiko-memochou/privacy-policy/">プライバシー</a> | <a href="/shiko-memochou/terms-of-service/">利用規約</a></p>
+    <p style="margin-top: 8px;">&copy; 2026 思考のメモ帳. All rights reserved.</p>
+  </div>
+</div>
+</body>
+</html>
