@@ -93,7 +93,7 @@
 <div class="container">
   <p class="app-name">思考のメモ帳</p>
   <h1>プライバシーポリシー</h1>
-  <p class="last-updated">最終更新日: 2026年5月17日</p>
+  <p class="last-updated">最終更新日: 2026年5月23日</p>
 
   <div class="section">
     <p>本プライバシーポリシーは、モバイルアプリケーション「思考のメモ帳」（以下「本アプリ」）におけるユーザー情報の取り扱いについて説明するものです。本アプリをご利用いただく前に、本ポリシーの内容をご確認ください。</p>
@@ -136,9 +136,23 @@
       <li>SKAdNetwork によるアトリビューションデータ（iOS）</li>
     </ul>
 
-    <p><strong>3-2. データの取り扱いに関する共通事項</strong></p>
+    <p><strong>3-2. Google Analytics for Firebase（利用状況の計測）</strong></p>
+    <p>本アプリは、アプリの利用状況を計測してサービスの品質向上に役立てるため、Google Analytics for Firebase（以下「Firebase Analytics」）を利用しています。Firebase Analytics は、以下の情報を自動的に収集する場合があります。</p>
+    <ul>
+      <li>アプリインスタンスID（個人を特定しないランダム生成のID）</li>
+      <li>デバイス情報（機種名、OSバージョン、画面解像度、言語設定、地域設定）</li>
+      <li>アプリ情報（バージョン、ビルド番号）</li>
+      <li>画面遷移情報（どの画面がどれくらい見られたか）</li>
+      <li>アプリ内アクション（ノードやフォルダの作成・編集・削除、モード切替、エクスポート/インポート等の操作回数）</li>
+      <li>セッション情報（起動回数、利用時間、起動間隔）</li>
+      <li>IPアドレスから推測されるおおよその地域情報（国・地域レベル、IPアドレス自体は保存されません）</li>
+    </ul>
+    <p>これらの情報はすべて匿名化されており、個人を特定するために用いることはありません。Firebase Analytics で収集されるデータは、本アプリの利用傾向の分析と改善のみを目的として使用されます。</p>
+
+    <p><strong>3-3. データの取り扱いに関する共通事項</strong></p>
     <p>上記のサービスで収集されるデータは、Google のポリシーに基づいて収集・処理されます。詳細は以下をご参照ください。</p>
     <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google プライバシーポリシー</a></p>
+    <p><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase プライバシーとセキュリティ</a></p>
     <p><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Google AdMob &amp; AdSense ポリシー</a></p>
     <p>なお、本アプリのコードから明示的にユーザーの個人情報を上記サービスに渡すことはありません。上記のデータ収集は各 SDK 側で自動的に処理されるものです。</p>
   </div>
@@ -160,9 +174,10 @@
     <h2>5. データ収集のオプトアウト（収集の拒否）</h2>
     <p>ユーザーは、以下の方法で第三者サービスによるデータ収集を制限することができます。</p>
     <ul>
-      <li><strong>iOS</strong>: 「設定」→「プライバシーとセキュリティ」→「トラッキング」で、本アプリのトラッキングをOFFにする</li>
+      <li><strong>パーソナライズ広告の停止（iOS）</strong>: 「設定」→「プライバシーとセキュリティ」→「トラッキング」で、本アプリのトラッキングをOFFにする</li>
+      <li><strong>すべてのデータ収集の停止</strong>: アプリをアンインストールすることで、Firebase Analytics による計測を含むすべてのデータ収集が停止されます</li>
     </ul>
-    <p>上記の操作により、パーソナライズ広告の配信および広告識別子を使用したデータの収集が停止されます。</p>
+    <p>Firebase Analytics は個人を特定しない匿名情報のみを収集するため、単体のオプトアウト機能は提供していません。完全に停止したい場合はアプリをアンインストールしてください。</p>
   </div>
 
   <div class="section">
