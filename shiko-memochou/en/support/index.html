@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support - KAISO</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background: #fafaf9;
+    color: #1c1917;
+    line-height: 1.7;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .lang-switch {
+    text-align: right;
+    font-size: 13px;
+    color: #78716c;
+    margin-bottom: 24px;
+  }
+
+  .lang-switch a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .lang-switch a:hover {
+    text-decoration: underline;
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .app-name {
+    color: #78716c;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .lead {
+    color: #57534e;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e7e5e4;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    color: #292524;
+  }
+
+  h2:first-of-type {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 14px;
+    color: #44403c;
+  }
+
+  .faq-category {
+    font-size: 13px;
+    font-weight: 700;
+    color: #78716c;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 28px 0 12px;
+  }
+
+  .faq-category:first-child {
+    margin-top: 0;
+  }
+
+  details {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  details[open] {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+
+  summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 14px 18px;
+    font-weight: 600;
+    color: #292524;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary::before {
+    content: '';
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    margin-top: 8px;
+    border-right: 2px solid #a8a29e;
+    border-bottom: 2px solid #a8a29e;
+    transform: rotate(-45deg);
+    transition: transform 0.2s ease;
+  }
+
+  details[open] summary::before {
+    transform: rotate(45deg);
+    margin-top: 6px;
+  }
+
+  .faq-answer {
+    padding: 0 18px 16px 36px;
+    color: #44403c;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .faq-answer p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+
+  .btn:hover {
+    background: #1d4ed8;
+    text-decoration: none;
+  }
+
+  ul {
+    margin: 8px 0 14px 20px;
+    color: #44403c;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .section {
+    margin-bottom: 28px;
+  }
+
+  .footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e7e5e4;
+    color: #a8a29e;
+    font-size: 13px;
+  }
+
+  .note {
+    font-size: 13px;
+    color: #78716c;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="lang-switch"><a href="/shiko-memochou/support/">日本語</a> | English</p>
+  <p class="app-name">KAISO</p>
+  <h1>Support</h1>
+  <p class="lead">How to use the app, frequently asked questions, and how to contact us.</p>
+
+  <div class="section">
+    <h2>Frequently Asked Questions</h2>
+
+    <p class="faq-category">Basic operations</p>
+
+    <details>
+      <summary>How do I create a folder?</summary>
+      <div class="faq-answer">
+        <p>Tap the "+" button at the bottom right of the home screen to create a new folder. Enter a folder name and save. Folders are the units that group outlines together.</p>
+      </div>
+    </details>
+    <details>
+      <summary>How do I add a node?</summary>
+      <div class="faq-answer">
+        <p>On the outline screen (the screen you see after opening a folder), tap the "+" button in the toolbar at the bottom. A new node is added right after the currently selected node. After entering a title, you can also press the "Return" key to add the next node in sequence.</p>
+      </div>
+    </details>
+    <details>
+      <summary>How do I change a node's indent level?</summary>
+      <div class="faq-answer">
+        <p>Use the "←" and "→" buttons in the toolbar in Write mode. Tap a node to select it, then use the buttons. Increasing the indent makes the node a child of the previous node; decreasing it moves the node up to its grandparent's level. If you indent a node that has children, the children move along with it.</p>
+      </div>
+    </details>
+    <details>
+      <summary>What's the difference between "Write" and "Organize" modes?</summary>
+      <div class="faq-answer">
+        <p>Use the segmented button at the top of the screen to switch modes.</p>
+        <p><strong>Write</strong> mode is focused on text input. You can directly edit the title and note of each node.</p>
+        <p><strong>Organize</strong> mode lets you freely reorder nodes by drag &amp; drop. You can also change indent levels. Tapping a node keeps it selected and automatically switches back to Write mode.</p>
+      </div>
+    </details>
+    <details>
+      <summary>How do I edit a node's body (long-form notes)?</summary>
+      <div class="faq-answer">
+        <p>When you select a node in Write mode, a pencil icon appears on the right edge. Tap that icon to open the body editor, where you can write long-form rich-text content. The icon appears blue when a body exists.</p>
+      </div>
+    </details>
+    <details>
+      <summary>How do I delete a node?</summary>
+      <div class="faq-answer">
+        <p>In Write mode, select the node you want to delete and tap the trash icon in the toolbar. A confirmation dialog appears. If the node has children, the children will also be deleted, so please be careful.</p>
+      </div>
+    </details>
+    <details>
+      <summary>How do I collapse child nodes?</summary>
+      <div class="faq-answer">
+        <p>In Write mode, tap the "▼" icon on the left edge of a node that has children. The child nodes are collapsed and hidden. Tap again to expand.</p>
+      </div>
+    </details>
+
+    <p class="faq-category">About your data</p>
+
+    <details>
+      <summary>Where is my data stored?</summary>
+      <div class="faq-answer">
+        <p>Data you enter, including folders, nodes, and body text, is stored only on your device. None of this data is transmitted to our servers or any external service.</p>
+        <p>To improve the app, we measure anonymous usage statistics such as screen navigation and operation counts using Google Analytics for Firebase. No personally identifiable information or user input content (such as node titles or body text) is transmitted. For details, please see the <a href="/shiko-memochou/en/privacy-policy/">Privacy Policy</a>.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Tell me about usage analytics</summary>
+      <div class="faq-answer">
+        <p>To improve the service, we collect the following kinds of anonymous information via Google Analytics for Firebase:</p>
+        <ul>
+          <li>Which screens are viewed (screen navigation)</li>
+          <li>Counts of key actions such as adding or deleting nodes</li>
+          <li>How often you switch between Write and Organize modes</li>
+          <li>Launch count and time in app (session information)</li>
+          <li>Device information such as model name and OS version</li>
+        </ul>
+        <p>All of this information is anonymized and is not used to identify individuals. To completely stop measurement, please uninstall the app. For details, please see the <a href="/shiko-memochou/en/privacy-policy/">Privacy Policy</a>.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Can I transfer my data when I change devices?</summary>
+      <div class="faq-answer">
+        <p>The app itself does not provide cross-device data migration (such as cloud sync). Whether app data is transferred during iCloud backup or device migration depends on your OS and device settings. Please back up important data yourself.</p>
+      </div>
+    </details>
+
+    <p class="faq-category">About ads</p>
+
+    <details>
+      <summary>What is Tracking Permission (ATT)?</summary>
+      <div class="faq-answer">
+        <p>On iOS, a system tracking permission dialog may appear so that the app can deliver ads tailored to your interests. Even if you do not allow tracking, the main features of the app remain usable, and non-personalized ads may be displayed. For details, please see the "Tracking" section of the <a href="/shiko-memochou/en/privacy-policy/">Privacy Policy</a>.</p>
+      </div>
+    </details>
+
+    <p class="faq-category">Troubleshooting</p>
+
+    <details>
+      <summary>The app won't launch or crashes immediately</summary>
+      <div class="faq-answer">
+        <p>Please try restarting your device, updating iOS, and updating the app to the latest version from the App Store. If the problem persists, please <a href="#contact">contact us</a> with your OS version and a description of what happens.</p>
+      </div>
+    </details>
+    <details>
+      <summary>My text isn't being saved</summary>
+      <div class="faq-answer">
+        <p>Text is saved automatically. Saving is finalized when you tap another node or navigate away. In rare cases, such as immediately after force-quitting the app, the last input may not be reflected. If this happens, please <a href="#contact">contact us</a>.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>For questions or bug reports, please use the form below. We aim to reply <strong>within about 3 business days</strong> after reviewing your message (responses may be delayed on weekends, holidays, or during busy periods).</p>
+      <p class="note">Before contacting us, please review the FAQ above. If your question is not resolved, including the OS type (iOS) and version, the app version, and as specific a description of the steps as possible will help us investigate.</p>
+      <p>
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeAdAJT0lbYgfVL1hu_YFKQc5WRmHaREhuR_2erXOSpPL_7SQ/viewform" target="_blank" rel="noopener noreferrer">Open contact form</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>App Information</h2>
+    <ul>
+      <li><strong>App name</strong>: KAISO</li>
+      <li><strong>Supported devices</strong>: iPhone (iOS 13.0 and later)</li>
+      <li><strong>Distribution</strong>: Apple App Store</li>
+      <li><strong>Price</strong>: Free</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Related links</h2>
+    <ul>
+      <li><a href="/shiko-memochou/en/privacy-policy/">Privacy Policy</a></li>
+      <li><a href="/shiko-memochou/en/terms-of-service/">Terms of Service</a></li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p><a href="/">Top</a> | <a href="/shiko-memochou/en/privacy-policy/">Privacy</a> | <a href="/shiko-memochou/en/terms-of-service/">Terms</a></p>
+    <p style="margin-top: 8px;">&copy; 2026 KAISO. All rights reserved.</p>
+  </div>
+</div>
+</body>
+</html>
