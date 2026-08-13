@@ -187,6 +187,35 @@
     font-size: 13px;
     color: #78716c;
   }
+
+  .tokushoho-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  .tokushoho-table th,
+  .tokushoho-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e7e5e4;
+    text-align: left;
+    vertical-align: top;
+    color: #44403c;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .tokushoho-table th {
+    min-width: 100px;
+    width: 30%;
+    font-weight: 600;
+    color: #292524;
+  }
+
+  .tokushoho-table tr:last-child th,
+  .tokushoho-table tr:last-child td {
+    border-bottom: none;
+  }
 </style>
 </head>
 <body>
@@ -284,6 +313,39 @@
       </div>
     </details>
 
+    <p class="faq-category">Premium について</p>
+
+    <details>
+      <summary>Premium プランには何が含まれますか？</summary>
+      <div class="faq-answer">
+        <p>Premium プラン（買い切り）をご購入いただくと、以下の機能が解放されます。</p>
+        <ul>
+          <li>全てのテンプレートを使える</li>
+          <li>ラベルを無制限に作成</li>
+          <li>広告非表示</li>
+        </ul>
+        <p>一度のお支払いで永続的にご利用いただけます。サブスクリプション（定期課金）ではありません。</p>
+      </div>
+    </details>
+    <details>
+      <summary>機種変更したら Premium は引き継げますか？</summary>
+      <div class="faq-answer">
+        <p>はい。同じ Apple ID をご利用であれば、設定画面またはPremium画面の「購入を復元」から復元できます。</p>
+      </div>
+    </details>
+    <details>
+      <summary>購入を復元するには？</summary>
+      <div class="faq-answer">
+        <p>Premium 画面の下部にある「購入を復元」をタップしてください。購入時と同じ Apple ID でサインインしている必要があります。</p>
+      </div>
+    </details>
+    <details>
+      <summary>返金はできますか？</summary>
+      <div class="faq-answer">
+        <p>アプリ内課金の返金は Apple が処理しています。返金を希望される場合は、Apple の<a href="https://reportaproblem.apple.com/" target="_blank" rel="noopener noreferrer">「問題を報告する」ページ</a>からお手続きください。</p>
+      </div>
+    </details>
+
     <p class="faq-category">不具合・トラブル</p>
 
     <details>
@@ -315,11 +377,13 @@
     <h2>アプリ情報</h2>
     <ul>
       <li><strong>アプリ名</strong>: 思考のメモ帳</li>
-      <li><strong>対応端末</strong>: iPhone（iOS 13.0 以降）</li>
+      <li><strong>対応端末</strong>: iPhone / iPad（iOS 13.0 以降）</li>
       <li><strong>配信</strong>: Apple App Store</li>
-      <li><strong>価格</strong>: 無料</li>
+      <li><strong>価格</strong>: 無料（Premium プラン: 買い切りのアプリ内課金あり）</li>
     </ul>
   </div>
+
+  <div class="section" id="tokushoho" data-nosnippet></div>
 
   <div class="section">
     <h2>関連リンク</h2>
@@ -334,5 +398,35 @@
     <p style="margin-top: 8px;">&copy; 2026 思考のメモ帳. All rights reserved.</p>
   </div>
 </div>
+<script>
+(function() {
+  var nc = [65,82,73,83,65,32,84,65,78,65,75,65];
+  var n = nc.map(function(c) { return String.fromCharCode(c); }).join('');
+  var e = atob('c3VwcG9ydC5rYWppc3Vra2lyaXRlY2hv') + '\x40' + atob('Z21haWwuY29t');
+  var el = document.getElementById('tokushoho');
+  if (!el) return;
+  el.innerHTML =
+    '<h2>特定商取引法に基づく表記</h2>' +
+    '<div class="card">' +
+    '<table class="tokushoho-table">' +
+    '<tr><th>販売業者</th><td>' + n + '（個人）</td></tr>' +
+    '<tr><th>運営責任者</th><td>' + n + '</td></tr>' +
+    '<tr><th>所在地</th><td>請求があった場合は遅滞なく開示いたします</td></tr>' +
+    '<tr><th>電話番号</th><td>請求があった場合は遅滞なく開示いたします</td></tr>' +
+    '<tr><th>メールアドレス</th><td>' + e + '</td></tr>' +
+    '<tr><th>販売価格</th><td>アプリ内の各購入画面に表示された価格に準じます</td></tr>' +
+    '<tr><th>支払方法</th><td>Apple App Store の決済システムによる</td></tr>' +
+    '<tr><th>支払時期</th><td>購入手続き完了時に即時決済</td></tr>' +
+    '<tr><th>商品の引渡時期</th><td>購入手続き完了後、即時利用可能</td></tr>' +
+    '<tr><th>返品・キャンセル</th><td>デジタルコンテンツのため、購入後の返品・返金は原則お受けできません。Apple の返金ポリシーに準じます。</td></tr>' +
+    '</table>' +
+    '<p class="note" style="margin-top: 12px;">' +
+    '※ 個人開発のため、住所・電話番号は省略しています。' +
+    '特定商取引法第11条ただし書きに基づき、購入者からの請求があった場合は遅滞なく開示いたします。' +
+    'お問い合わせは上記メールアドレスまたは<a href="#contact">お問い合わせフォーム</a>よりお願いいたします。' +
+    '</p>' +
+    '</div>';
+})();
+</script>
 </body>
 </html>
